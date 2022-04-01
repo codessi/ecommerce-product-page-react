@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/ecommerce-product-page-react/static/css/main.6c2c58ae.css",
-    "main.js": "/ecommerce-product-page-react/static/js/main.422951ae.js",
+    "main.css": "/ecommerce-product-page-react/static/css/main.003f85b1.css",
+    "main.js": "/ecommerce-product-page-react/static/js/main.5aab36bb.js",
     "static/media/image-product-2.jpg": "/ecommerce-product-page-react/static/media/image-product-2.c8bb0aaccecdebb16596.jpg",
     "static/media/image-product-1.jpg": "/ecommerce-product-page-react/static/media/image-product-1.520cc50bd13955f55cb2.jpg",
     "static/media/image-product-3.jpg": "/ecommerce-product-page-react/static/media/image-product-3.af5c71ba9ffcc0b8b54d.jpg",
     "static/media/image-product-4.jpg": "/ecommerce-product-page-react/static/media/image-product-4.9962862ef3eff6d65e5b.jpg",
     "index.html": "/ecommerce-product-page-react/index.html",
+    "static/media/icon-delete.svg": "/ecommerce-product-page-react/static/media/icon-delete.1fd1f1f7d9f8ce5557b44ca3470a18b8.svg",
     "static/media/icon-cart.svg": "/ecommerce-product-page-react/static/media/icon-cart.539ec608f50e707c94d583ec11acf99d.svg",
+    "static/media/icon-close.svg": "/ecommerce-product-page-react/static/media/icon-close.c390448669f3a8a4c4b2ada2f9938959.svg",
     "static/media/icon-menu.svg": "/ecommerce-product-page-react/static/media/icon-menu.c6107d03f1edcf73523ebd8cbc50a443.svg",
     "static/media/icon-previous.svg": "/ecommerce-product-page-react/static/media/icon-previous.80616402c611cc0a6651d0b751da8a9b.svg",
     "static/media/icon-next.svg": "/ecommerce-product-page-react/static/media/icon-next.9621183a551a9985b4bd7536c9a69c66.svg",
-    "main.6c2c58ae.css.map": "/ecommerce-product-page-react/static/css/main.6c2c58ae.css.map",
-    "main.422951ae.js.map": "/ecommerce-product-page-react/static/js/main.422951ae.js.map"
+    "main.003f85b1.css.map": "/ecommerce-product-page-react/static/css/main.003f85b1.css.map",
+    "main.5aab36bb.js.map": "/ecommerce-product-page-react/static/js/main.5aab36bb.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c2c58ae.css",
-    "static/js/main.422951ae.js"
+    "static/css/main.003f85b1.css",
+    "static/js/main.5aab36bb.js"
   ]
 }
