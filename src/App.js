@@ -1,17 +1,22 @@
 
+import React,{useState} from 'react';
 import './App.scss';
 import Nav from "./components/Nav"
 import Products from './components/Products'
 import Content from './components/Content';
 import Shopping from './components/Shopping';
 
+
+
 function App() {
+  const [purchase, setPurchase] = useState(0)
+  
   return (
     <>
-    <Nav /> 
+    <Nav purchase ={purchase} setPurchase={setPurchase}/> 
     <Products />
     <Content />
-    <Shopping />
+    <Shopping purchase ={purchase} setPurchase={setPurchase}/>
     </>
   );
 }

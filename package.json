@@ -1,6 +1,6 @@
 {
-  "name": "react-template-johan",
-  "homepage": "https://codessi.github.io/react-template-johan",
+  "name": "ecommerce-product-page",
+  "homepage": "https://codessi.github.io/ecommerce-product-page-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
