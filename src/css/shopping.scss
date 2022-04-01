@@ -1,0 +1,57 @@
+.pricing-wrapper, .quantity{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sale-price{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  .sale-usd{
+    font-size: 2rem;
+  }
+  .sale-percent{
+    background-color: rgba(255, 166, 0, 0.31);
+    color: orange;
+    padding: 0.3rem;
+    border-radius: .3rem;
+  }
+
+
+}
+  .msrp{
+    text-decoration:line-through;
+    color: gray;
+  }
+.quantity{
+  background-color: rgba(227, 227, 227, 0.589);
+  border-radius: .5rem;
+  padding: 0.4rem 1rem;
+  button{
+    background: none;
+    border: none;
+    font-size: 1.7rem;
+  }
+}
+
+button.cart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .4rem;
+  flex-direction: row;
+  background-color: orange;
+  color: white;
+  font-family: inherit;
+  border: none;
+  width: 100%;
+  border-radius: .5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  img.item-cart{
+    filter: brightness(400%);
+  }
+}

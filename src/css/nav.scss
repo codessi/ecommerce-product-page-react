@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // border: dotted purple;
+}
+.user-wrapper, .menu-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: dotted red;
+  gap: 1rem;
+  margin:1rem 2rem 0 ;
+
+}
+
+
+.menu-wrapper{
+  height: 2rem;
+
+  font-size: 2rem;
+  img{
+    height: 80%;
+  }
+  
+}
+
+
+
+.profile{
+  height: 2rem;
+}
