@@ -10,7 +10,7 @@ import close from './../images/icon-close.svg'
 
 const Nav = ({purchase, setPurchase}) => {
   const [showCart, setShowCart] = useState(false)
-  const [showMenu, setShowMenu] = useState(true)
+  const [showMenu, setShowMenu] = useState(false)
 
   const handleCart = (e) => {
     e.preventDefault()
@@ -33,7 +33,7 @@ const Nav = ({purchase, setPurchase}) => {
           <div className={showMenu? "mobile-menu": "mobile-menu hide"}>
             
             <ul>
-              <li>Collections</li>
+              <li>Collections</li> 
               <li>Men</li>
               <li>Women</li>
               <li>About</li>
