@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import profile from '../images/image-avatar.png'
 import menu from '../images/icon-menu.svg'
 import cart from '../images/icon-cart.svg'
@@ -11,6 +11,26 @@ import close from './../images/icon-close.svg'
 const Nav = ({purchase, setPurchase}) => {
   const [showCart, setShowCart] = useState(false)
   const [showMenu, setShowMenu] = useState(false)
+
+  let cartRef = useRef();
+  console.log(cartRef)
+
+  useEffect(() => {
+    let handler= (event) => {
+      if(!cartRef.current.contains(event.target)){
+        setShowCart(false)
+      }
+    }
+    document.addEventListener("mousedown", handler );
+
+    return () => {
+      document.removeEventListener("mousedown", handler)
+    }
+
+  })
+  
+
+  console.log()
 
   const handleCart = (e) => {
     e.preventDefault()
@@ -30,6 +50,10 @@ const Nav = ({purchase, setPurchase}) => {
     <div>
       <nav>
         <div className="menu-wrapper">
+   
+          <img className="menu" onClick= {handleClose } src={showMenu? close : menu} alt="" />
+          {/* <img onClick= {handleClose } src={menu} alt="menu" /> */}
+          <h3>sneakers</h3>       
           <div className={showMenu? "mobile-menu": "mobile-menu hide"}>
             
             <ul>
@@ -40,15 +64,25 @@ const Nav = ({purchase, setPurchase}) => {
               <li>Contact</li>
             </ul>
           </div>
-          <img className="menu" onClick= {handleClose } src={showMenu? menu : close} alt="" />
-          {/* <img onClick= {handleClose } src={menu} alt="menu" /> */}
-          <h3>sneakers</h3>
+          <div className="desk-menu">
+            <ul>
+              <li>Collections</li> 
+              <li>Men</li>
+              <li>Women</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+
+          </div>
         </div>
         <div className="user-wrapper">
-            <div className="cart-group">
+            <div ref={cartRef} className="cart-group">
               <a href="#" onClick={ handleCart }>
                 <img src={cart} alt="cart" />
-                <div className="qty">{purchase}</div>
+                {
+                  purchase ? <div className="qty">{purchase}</div> : ""
+                }
+                
               </a>
               <div className={
                 showCart ? 

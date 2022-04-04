@@ -14,9 +14,13 @@ function App() {
   return (
     <>
     <Nav purchase ={purchase} setPurchase={setPurchase}/> 
-    <Products />
-    <Content />
-    <Shopping purchase ={purchase} setPurchase={setPurchase}/>
+    <div className="desktop-group">
+      <Products />
+      <div className="desktop-right">
+        <Content />
+        <Shopping purchase ={purchase} setPurchase={setPurchase}/>
+      </div>
+    </div>
     </>
   );
 }
