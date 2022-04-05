@@ -1,9 +1,7 @@
 
 
 
-# Frontend Mentor - E-commerce product page solution
-
-This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+#  E-commerce product page 
 
 ## Table of contents
 
@@ -29,14 +27,14 @@ Users should be able to:
 
 - [x] View the optimal layout for the site depending on their device's screen size
 - [x] See hover states for all interactive elements on the page
-- [ ]Open a lightbox gallery by clicking on the large product image
+- [x]Open a lightbox gallery by clicking on the large product image
 - [x] Switch the large product image by clicking on the small thumbnail images
 - [x] Add items to the cart
 - [x] View the cart and remove items from it
 
 ### Screenshot
 
-![screen shot](./src/images/ecommerce-screenshot.pngscreenshot.png)
+![screen shot](https://www.flickr.com/0cfff86b-28ff-4f08-aada-e844be3fae50)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 

@@ -9,10 +9,7 @@
   opacity: 0;
   height: 0;
 }
-.overlay.show{
-  opacity: 1;
- height: 100vh;
-}
+
 
 .products{
   // border: dotted;
@@ -159,6 +156,11 @@
     width: 39%;
     height: 39%;
     opacity: 1;
+  }
+
+  .overlay.show{
+    opacity: 1;
+   height: 100vh;
   }
 
 }
