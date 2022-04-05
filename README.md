@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Screenshot
 
-![screen shot](blob:https://www.flickr.com/0cfff86b-28ff-4f08-aada-e844be3fae50)
+<img width="1188" alt="ecommerce-screenshot" src="https://user-images.githubusercontent.com/51131852/161812639-031db062-2e9c-49b4-8f96-a1d955aaf38e.png">
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
