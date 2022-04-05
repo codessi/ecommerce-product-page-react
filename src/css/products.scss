@@ -1,9 +1,26 @@
+.overlay{
+  background-color: rgba(0, 0, 0, 0.571);
+  position: fixed;
+  min-width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  opacity: 0;
+  height: 0;
+}
+.overlay.show{
+  opacity: 1;
+ height: 100vh;
+}
+
 .products{
   // border: dotted;
+
   margin: 0 auto;
   padding: 1rem;
   position: relative;
 // min-height: 35rem;
+ 
 
   .thumb-nail{
     display: none;
@@ -15,7 +32,7 @@
     height: 0;
     // margin: 1rem auto;
     // position: absolute;
-    width: 100%;
+    // width: 100%;
     top: 1rem;
     left: 1rem;
     right: 1rem;
@@ -23,11 +40,12 @@
     opacity: 0;
     border-radius: 1rem;
     transition: all 300ms ease-in-out;
-
+    // border: dotted;
 
     &.show{
       opacity: 1;
       height: auto;
+      
     }
   }
 
@@ -70,6 +88,9 @@
 }
 
 
+
+
+
 @media screen and (min-width: 785px) {
  .products{ 
    .thumb-nail{
@@ -93,6 +114,23 @@
        display: none;
        border: dotted;
     }
+  }
+
+  .light-box{
+    opacity: 0;
+    z-index: 55;
+    position: absolute;
+    
+    // top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    height: 0;
+    width: 0;
+  }
+  .light-box.show{
+    width: 39%;
+    height: 39%;
+    opacity: 1;
   }
 
 }

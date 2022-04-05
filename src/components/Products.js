@@ -17,6 +17,8 @@ import previous from '../images/icon-previous.svg'
 import items from '../data/itemsData'
 
 const Products = () => {
+
+
   const imgArr = [
     productOne, productTwo, productThree, productFour
   ]
@@ -24,6 +26,7 @@ const Products = () => {
     tProductOne, tProductTwo, tProductThree, tProductFour
   ]
   const [arrNumb, setArrNumb] = useState(0) 
+  const [lightBoxShow, setLightBoxShow] = useState(false)
 
   const prevHandle = () => {
    setArrNumb(arrNumb===0 ? imgArr.length-1 : arrNumb-1)
@@ -32,26 +35,52 @@ const Products = () => {
   const nextHandle = () => {
     setArrNumb(arrNumb === imgArr.length-1 ? 0 : arrNumb + 1)
   }
-  
+  const handleLightBox = () => {
+    setLightBoxShow(!lightBoxShow)
+    // console.log("handlelightbox")
+  }
 
   return (
-    <div className='products'>
-      {imgArr.map((el, index) => {
-       return(<img key={index} className= {index === arrNumb ? "product show": "product"} src={el} alt="shoes" />)
-      })}
-      <div className="thumb-nail">
-
-        <img onClick = {()=> setArrNumb(0)}src={tProductOne} alt="" />
-        <img onClick = {()=> setArrNumb(1)}src={tProductTwo} alt="" />
-        <img onClick = {()=> setArrNumb(2)}src={tProductThree} alt="" />
-        <img onClick = {()=> setArrNumb(3)}src={tProductFour} alt="" />
-      </div>
-
+    <div className='products-container'>
+      <div className={lightBoxShow?"overlay show": "overlay"}></div>
       
+      <div className={lightBoxShow?'products light-box show': 'products light-box'}>
+          <button onClick={handleLightBox}>x</button>
+          {imgArr.map((el, index) => {
+          return(<img key={index} className= {index === arrNumb ? "product show": "product"} src={el} alt="shoes" />)
+          })}
+          <div className="thumb-nail">
 
-      <button onClick={prevHandle} className='l-arrow arrow'><img src={previous} alt="left arrow" /></button>
-      <button onClick={nextHandle} className='r-arrow arrow'><img src={next} alt="right arrow" /></button>
+            <img onClick = {()=> setArrNumb(0)}src={tProductOne} alt="" />
+            <img onClick = {()=> setArrNumb(1)}src={tProductTwo} alt="" />
+            <img onClick = {()=> setArrNumb(2)}src={tProductThree} alt="" />
+            <img onClick = {()=> setArrNumb(3)}src={tProductFour} alt="" />
+          </div>
+
+          
+
+          <button onClick={prevHandle} className='l-arrow arrow'><img src={previous} alt="left arrow" /></button>
+          <button onClick={nextHandle} className='r-arrow arrow'><img src={next} alt="right arrow" /></button>
+      </div>
+      <div className='products '>
+        {imgArr.map((el, index) => {
+        return(<img onClick={handleLightBox} key={index} className= {index === arrNumb ? "product show": "product"} src={el} alt="shoes" />)
+        })}
+        <div className="thumb-nail">
+
+          <img onClick = {()=> setArrNumb(0)}src={tProductOne} alt="" />
+          <img onClick = {()=> setArrNumb(1)}src={tProductTwo} alt="" />
+          <img onClick = {()=> setArrNumb(2)}src={tProductThree} alt="" />
+          <img onClick = {()=> setArrNumb(3)}src={tProductFour} alt="" />
+        </div>
+
+        
+
+        <button onClick={prevHandle} className='l-arrow arrow'><img src={previous} alt="left arrow" /></button>
+        <button onClick={nextHandle} className='r-arrow arrow'><img src={next} alt="right arrow" /></button>
+      </div>
     </div>
+    
   )
 }
 
