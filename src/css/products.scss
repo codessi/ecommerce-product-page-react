@@ -1,6 +1,7 @@
 .overlay{
   background-color: rgba(0, 0, 0, 0.571);
   position: fixed;
+
   min-width: 100vw;
   top: 0;
   left: 0;
@@ -87,12 +88,47 @@
 
 }
 
+.light-box{
+  opacity: 0;
+  z-index: 55;
+  position: absolute;
+  
+  // top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  height: 0;
+  width: 0;
+  // border: dotted;
+.flex-center{
+  display: flex;
+  justify-content: end;
+}
+  button{
+    // width: 2rem;
+    // height: 2rem;
+    // width: 100%;
+    // display: block;
+    // border: dotted;
+    // position: absolute;
+    right: 0;
+    top:0;
+    text-align: right;
+    // border-radius: 50%;
+    // background-color: white;
+    color: orange;
+    font-size: 2rem;
+  }
+}
+
 
 
 
 
 @media screen and (min-width: 785px) {
  .products{ 
+   .product{
+     cursor: pointer;
+   }
    .thumb-nail{
     width: 100%;
     display: flex;
@@ -102,10 +138,12 @@
     margin-top: 0.6rem;
     // display: ;
     
+    
 
     img{
       width: 24.2%;
       border-radius: .5rem;
+      &:hover{ opacity: .4;}
     }
   }}
 
@@ -116,17 +154,7 @@
     }
   }
 
-  .light-box{
-    opacity: 0;
-    z-index: 55;
-    position: absolute;
-    
-    // top: 50%;
-    left: 50%;
-    transform: translate(-50%, -20%);
-    height: 0;
-    width: 0;
-  }
+ 
   .light-box.show{
     width: 39%;
     height: 39%;

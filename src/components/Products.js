@@ -45,7 +45,7 @@ const Products = () => {
       <div className={lightBoxShow?"overlay show": "overlay"}></div>
       
       <div className={lightBoxShow?'products light-box show': 'products light-box'}>
-          <button onClick={handleLightBox}>x</button>
+          <div className="flex-center"><button onClick={handleLightBox}>x</button></div>
           {imgArr.map((el, index) => {
           return(<img key={index} className= {index === arrNumb ? "product show": "product"} src={el} alt="shoes" />)
           })}
